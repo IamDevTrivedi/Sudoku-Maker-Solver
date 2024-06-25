@@ -41,7 +41,7 @@ for (let i = 0; i < 9; ++i) {
                 alert("That's not a valid number.");
             } else {
                 divBox.innerText = `${number}`;
-                divBox.style.color = "#000000";
+                divBox.style.color = "#b2df4a";
                 divBox.style.fontWeight = "800";
             }
         });
