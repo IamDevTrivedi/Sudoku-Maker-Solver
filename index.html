@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku Maker & Solver - Online</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="interface">
+        <nav>
+            <span class="default-faltu"  >Online</span> <span class="default-faltu-2">Sudoku Maker & Solver</span>
+        </nav>
+        <div class="sudoku-grid" id="sudokuGrid"></div>
+
+        <div class="button-box">
+            
+
+            <button class="cta fill-sample">
+                <span>Generate Sample</span>
+                <svg width="15px" height="10px" viewBox="0 0 13 10">
+                    <path d="M1,5 L11,5"></path>
+                    <polyline points="8 1 12 5 8 9"></polyline>
+                </svg>
+            </button>
+
+
+            <button class="cta resetButton">
+                <span>Clear Input</span>
+                <svg width="15px" height="10px" viewBox="0 0 13 10">
+                    <path d="M1,5 L11,5"></path>
+                    <polyline points="8 1 12 5 8 9"></polyline>
+                </svg>
+            </button>
+            <button class="cta solveButton">
+                <span>Solve Sudoku</span>
+                <svg width="15px" height="10px" viewBox="0 0 13 10">
+                    <path d="M1,5 L11,5"></path>
+                    <polyline points="8 1 12 5 8 9"></polyline>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="randomSudoku.js"></script>
+</body>
+</html>

@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(45deg, #4D1864, #000528);
+    color: #FFFFFF;
+}
+
+.interface {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+nav {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.sudoku-grid {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    width: 90vw;
+    max-width: 360px;
+    height: 90vw;
+    max-height: 360px;
+    border: 4px solid #1E2749;
+    box-sizing: border-box;
+}
+
+.box-1x1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #1E2749;
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.box-1x1:nth-child(3n) {
+    border-right: 2px solid #1E2749;
+}
+
+.button-box {
+    margin-top: 25px;
+    /* text-align: center; */
+}
+
+.button-box button{
+    margin: 10px 0px;
+}
+
+.default-faltu {
+    color: white;
+    text-decoration: none;
+}
+
+.default-faltu-2 {
+    color: #FF4763;
+    text-decoration: underline;
+    text-decoration-color: rgb(255, 255, 255);
+    text-underline-offset: 7px;
+}
+
+.cta {
+    position: relative;
+    margin: auto;
+    padding: 12px 18px;
+    transition: all 0.2s ease;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.cta:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 50px;
+    background: #D73750;
+    width: 45px;
+    height: 45px;
+    transition: all 0.3s ease;
+}
+
+.cta span {
+    position: relative;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: #D4D7D3;
+}
+
+.cta svg {
+    position: relative;
+    top: 0;
+    margin-left: 10px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: #234567;
+    stroke-width: 2;
+    transform: translateX(-5px);
+    transition: all 0.3s ease;
+}
+
+.cta:hover:before {
+    width: 100%;
+    background: #D73750;
+}
+
+.cta:hover svg {
+    transform: translateX(0);
+}
+
+.cta:active {
+    transform: scale(0.95);
+}
+
+.box-1x1:hover {
+    background-color: #8ECAE6;
+    transform: scale(1.2);
+}
+
+.class-1 {
+    background-color: #4a5785;
+}
+
+.class-2 {
+    background-color: #4a5785;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    nav {
+        font-size: 1.5rem;
+    }
+
+    .sudoku-grid {
+        width: 80vw;
+        height: 80vw;
+    }
+
+    .cta span {
+        font-size: 0.875rem;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        font-size: 1.25rem;
+    }
+
+    .sudoku-grid {
+        width: 95vw;
+        height: 95vw;
+    }
+
+    .cta span {
+        font-size: 0.75rem;
+    }
+}
